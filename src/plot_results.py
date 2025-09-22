@@ -300,7 +300,7 @@ def plot_joint(
         )
         ax2.axis("equal")
     else:
-        ax2.text(0.5, 0.5, "No judge data", ha="center", va="center")
+        ax2.text(0, 0, "No judge data", ha="center", va="center")
         ax2.axis("off")
 
     # Bottom-right: grouped counts per category across triples
@@ -364,8 +364,8 @@ def main() -> None:
     datasets = [
         (
             "Explicit Deception",
-            os.path.join(repo_root, "explicit_deception_results_v2", "results"),
-            os.path.join(repo_root, "explicit_deception_results_v2", "reports"),
+            os.path.join(repo_root, "explicit_deception_results", "results"),
+            os.path.join(repo_root, "explicit_deception_results", "reports"),
         ),
         (
             "Iterative Collusion",

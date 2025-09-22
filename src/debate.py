@@ -860,9 +860,9 @@ async def main_async(args: argparse.Namespace) -> None:
     # Prepare output directories
     root_dir = os.getcwd()
     if getattr(args, "explicit_deception", False):
-        base_results_dirname = "explicit_deception_results_v3"
+        base_results_dirname = "explicit_deception_results"
     elif getattr(args, "iterative_collusion", False):
-        base_results_dirname = "iterative_collusion_results_v3"
+        base_results_dirname = "iterative_collusion_results"
     else:
         base_results_dirname = "results"
     

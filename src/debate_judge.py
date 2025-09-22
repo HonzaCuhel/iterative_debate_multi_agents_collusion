@@ -71,11 +71,11 @@ class DebateJudge:
                     winner = alice_name
                 elif winner == "Bob":
                     winner = bob_name
-            # Scores: 0.5/0.5 for draw, else 1/0
+            # Scores: 0/0 for draw, else 1/0
             scores = {alice_name: 0.0, bob_name: 0.0}
             if winner is None:
-                scores[alice_name] = 0.5
-                scores[bob_name] = 0.5
+                scores[alice_name] = 0
+                scores[bob_name] = 0
             else:
                 scores[winner] = 1.0
                 scores[alice_name if winner == bob_name else bob_name] = -1.0
