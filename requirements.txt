@@ -1,0 +1,7 @@
+ollama
+"langchain[anthropic]"
+openai 
+tqdm 
+tenacity
+matplotlib
+seaborn
